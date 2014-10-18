@@ -1,0 +1,194 @@
+
+
+#wrapper{
+    border:solid thin grey;
+    padding:10px;
+    padding-bottom:20px;
+    margin:45px -10px 5px;
+}
+
+#search-result-count{
+    
+    color:rgb(0, 85, 128);
+    font-style:italic;
+    text-decoration:underline;
+}
+div.form{
+    
+    }
+fieldset{
+    padding:10px !important;
+    border:1px solid rgb(204, 204, 204) !important;    
+    margin:0 auto !important;
+}
+legend{
+    width: auto !important;
+    margin-bottom: 0 !important;
+    border-style: none !important;
+}
+.order_search  select{
+    width: 100%
+}
+.order_search  input{
+    width: 95%;
+}
+form select, form input{
+    margin-top: .5em;
+    width:30%;
+}
+form input[type='submit']{
+    float:right;
+    clear:both;
+}
+a#page-size{
+    float:right;
+}
+.grid-view-loading
+{
+	background:url(loading.gif) no-repeat;
+}
+
+.grid-view
+{
+	padding: 15px 0;
+}
+
+.grid-view table.items
+{
+	background: white;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px #D0E3EF solid;
+}
+
+.grid-view table.items th, .grid-view table.items td
+{
+	font-size: 0.9em;
+	border: 1px white solid;
+	padding: 0.3em;
+}
+
+.grid-view table.items th
+{
+	color: white;
+	background: url("bg.gif") repeat-x scroll left top white;
+	text-align: center;
+}
+
+.grid-view table.items th a
+{
+	color: #EEE;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.grid-view table.items th a:hover
+{
+	color: #FFF;
+}
+
+.grid-view table.items th a.asc
+{
+	background:url(up.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items th a.desc
+{
+	background:url(down.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items tr.even
+{
+	background: #F8F8F8;
+}
+
+.grid-view table.items tr.odd
+{
+	background: #E5F1F4;
+}
+
+.grid-view table.items tr.selected
+{
+	background: #BCE774;
+}
+
+.grid-view table.items tr:hover.selected
+{
+	background: #CCFF66;
+}
+
+.grid-view table.items tbody tr:hover
+{
+	background: #ECFBD4;
+}
+
+.grid-view .link-column img
+{
+	border: 0;
+}
+
+.grid-view .button-column
+{
+	text-align: center;
+	width: 60px;
+}
+
+.grid-view .button-column img
+{
+	border: 0;
+}
+
+.grid-view .checkbox-column
+{
+	width: 15px;
+}
+
+.grid-view .summary
+{
+	margin: 0 0 5px 0;
+	text-align: right;
+}
+
+.grid-view .pager
+{
+	margin: 5px 0 0 0;
+	text-align: right;
+}
+
+.grid-view .empty
+{
+	font-style: italic;
+}
+
+.grid-view .filters input,
+.grid-view .filters select
+{
+	width: 100%;
+	border: 1px solid #ccc;
+}
+.role-list{
+    margin-left: 80px;
+    width: 200px;
+}
+#create-form-wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+.change-link{
+    margin-left: 150px;
+}
+#User_password::-webkit-input-placeholder { /* WebKit browsers */
+    color: #cc5260;
+}
+#User_password:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fd73ad;
+}
+#User_password::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #5b7486;
+    font-size: 14px;
+}
+#User_password:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #fd73ad;
+}

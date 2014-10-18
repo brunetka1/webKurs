@@ -1,0 +1,88 @@
+/* (CSS styles for build Windows 8 Metro UI stylable interface 
+http://metroui.org.ua */
+
+
+.metrouicss {
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    box-sizing: border-box;
+    display: inline-block;
+}
+.metrouicss label {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+    letter-spacing: 0.02em;
+    line-height: 14pt;
+    font-smooth: always;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.metrouicss .input-control.switch {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.metrouicss .input-control.switch > input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+
+    padding: 0;
+    /* 2 */
+
+    *height: 13px;
+    *width: 13px;
+    /* 3 */
+
+}
+.metrouicss .input-control.switch .helper {
+    padding-left: 52px;
+    position: relative;
+}
+.metrouicss .input-control.switch input[type="checkbox"]:not(:checked) ~ .helper:before {
+    background: #a6a6a6 !important;
+}
+.metrouicss .input-control.switch .helper:before {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    display: block;
+    content: "";
+    width: 43px;
+    height: 16px;
+    outline: 2px #a6a6a6 solid;
+    border: 1px #fff solid;
+    cursor: pointer;
+    background: #428BCA;
+    margin-left: 2px;
+    z-index: 1;
+}
+.metrouicss .input-control.switch input[type="checkbox"]:not(:checked) ~ .helper:after {
+    left: 2px !important;
+}
+.metrouicss .input-control.switch input[type="checkbox"] ~ .helper:after {
+    position: absolute;
+    left: 36px;
+    top: 2px;
+    display: block;
+    content: "";
+    width: 9px;
+    height: 16px;
+    outline: 2px #333 solid;
+    border: 1px #333 solid;
+    cursor: pointer;
+    background: #333;
+    z-index: 2;
+}
+.metrouicss p {
+    text-align: center;
+}
