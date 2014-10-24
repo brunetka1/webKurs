@@ -2,7 +2,12 @@
 
 class AdminController extends Controller
 {
+    const ADMIN = 'admin';
+    const CUSTOMER = 'customer';
+    const SUPERVISOR = 'supervisor';
+    const MERCHANDISER = 'merchandiser';
     
+
 
     public $defaultAction = 'index';
 
@@ -95,24 +100,7 @@ class AdminController extends Controller
         }
     }
 
-/*
-    protected function assignRole($role,$userId,$isNewRecord=true)
-    {
-        if ($isNewRecord ) {
-            Yii::app()->authManager->assign($role,$userId);
-        } else {
-            Yii::app()->db->createCommand('
-                UPDATE auth_assignment 
-                SET itemname= :role 
-                WHERE userid= :userId
-            ')->execute(array(
-                'role'   => $role,
-                'userId' => $userId
-                )
-            );
-        }
-    }
-*/
+
     public function actionUser($id)
     {
         $response = CJSON::encode($this->loadModel($id)->getAttributes(array(
@@ -200,6 +188,23 @@ class AdminController extends Controller
         if($model===null)
             throw new CHttpException(404,'The requested page does not exist.');
         return $model;
+    }
+
+    protected function assignRole($role,$userId,$isNewRecord=true)
+    {
+        if ($isNewRecord ) {
+            Yii::app()->authManager->assign($role,$userId);
+        } else {
+            Yii::app()->db->createCommand('
+                UPDATE auth_assignment 
+                SET itemname= :role 
+                WHERE userid= :userId
+            ')->execute(array(
+                'role'   => $role,
+                'userId' => $userId
+                )
+            );
+        }
     }
 
     public function actionDuplicate($id){

@@ -2855,3 +2855,169 @@ Stack trace:
 REQUEST_URI=/shop/index.php/admin/create
 HTTP_REFERER=http://test1/shop/index.php/admin/
 ---
+2014/10/23 15:58:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in Z:\home\localhost\www\webKurs\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\CController.php(270): CController->missingAction('css')
+#1 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('css')
+#2 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('ibeacon/css/pag...')
+#3 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webKurs/index.php/ibeacon/css/pager.css
+HTTP_REFERER=http://localhost/webKurs/index.php/ibeacon/admin
+---
+2014/10/23 15:58:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gridview".' in Z:\home\localhost\www\webKurs\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\CController.php(270): CController->missingAction('gridview')
+#1 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('gridview')
+#2 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('ibeacon/gridvie...')
+#3 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webKurs/index.php/ibeacon/gridview/jquery.yiigridview.js
+HTTP_REFERER=http://localhost/webKurs/index.php/ibeacon/admin
+---
+2014/10/23 16:10:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "duplicate.php".' in Z:\home\localhost\www\webKurs\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\CController.php(270): CController->missingAction('duplicate.php')
+#1 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('duplicate.php')
+#2 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/duplicate...')
+#3 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webKurs/index.php/admin/duplicate.php
+---
+2014/10/23 16:10:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('duplicate')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/duplicate')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/admin/duplicate
+---
+2014/10/23 16:10:33 [error] [exception.CException] exception 'CException' with message 'Property "User.confirmPassword" is not defined.' in Z:\home\localhost\www\webKurs\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\db\ar\CActiveRecord.php(145): CComponent->__get('confirmPassword')
+#1 Z:\home\localhost\www\webKurs\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('confirmPassword')
+#2 Z:\home\localhost\www\webKurs\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(User), 'confirmPassword')
+#3 Z:\home\localhost\www\webKurs\framework\web\helpers\CHtml.php(1628): CHtml::activeInputField('password', Object(User), 'confirmPassword', Array)
+#4 Z:\home\localhost\www\webKurs\framework\web\widgets\CActiveForm.php(771): CHtml::activePasswordField(Object(User), 'confirmPassword', Array)
+#5 Z:\home\localhost\www\webKurs\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(115): CActiveForm->passwordField(Object(User), 'confirmPassword', Array)
+#6 Z:\home\localhost\www\webKurs\protected\extensions\bootstrap\widgets\input\TbInput.php(209): TbInputHorizontal->passwordField()
+#7 Z:\home\localhost\www\webKurs\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(24): TbInput->run()
+#8 Z:\home\localhost\www\webKurs\framework\web\CBaseController.php(173): TbInputHorizontal->run()
+#9 Z:\home\localhost\www\webKurs\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#10 Z:\home\localhost\www\webKurs\protected\extensions\bootstrap\widgets\TbActiveForm.php(136): TbActiveForm->inputRow('password', Object(User), 'confirmPassword', NULL, Array)
+#11 Z:\home\localhost\www\webKurs\protected\views\admin\create.php(21): TbActiveForm->passwordFieldRow(Object(User), 'confirmPassword')
+#12 Z:\home\localhost\www\webKurs\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#13 Z:\home\localhost\www\webKurs\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#14 Z:\home\localhost\www\webKurs\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#15 Z:\home\localhost\www\webKurs\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#16 Z:\home\localhost\www\webKurs\protected\controllers\AdminController.php(143): CController->render('create', Array)
+#17 Z:\home\localhost\www\webKurs\framework\web\actions\CInlineAction.php(49): AdminController->actionCreate()
+#18 Z:\home\localhost\www\webKurs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#19 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#20 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#21 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#22 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#24 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#25 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('create')
+#27 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/create')
+#28 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#29 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/webKurs/index.php/admin/create
+HTTP_REFERER=http://localhost/webKurs/index.php/admin/index
+---
+2014/10/23 16:22:36 [warning] [application] Failed to set unsafe attribute "confirmPassword" of "User".
+in Z:\home\localhost\www\webKurs\protected\controllers\AdminController.php (133)
+in Z:\home\localhost\www\webKurs\index.php (13)
+2014/10/23 16:22:36 [error] [exception.CException] exception 'CException' with message 'AdminController and its behaviors do not have a method or closure named "assignRole".' in Z:\home\localhost\www\webKurs\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\protected\controllers\AdminController.php(135): CComponent->__call('assignRole', Array)
+#1 Z:\home\localhost\www\webKurs\protected\controllers\AdminController.php(135): AdminController->assignRole('supervisor', '18')
+#2 Z:\home\localhost\www\webKurs\framework\web\actions\CInlineAction.php(49): AdminController->actionCreate()
+#3 Z:\home\localhost\www\webKurs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#10 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('create')
+#12 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/create')
+#13 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/webKurs/index.php/admin/create
+HTTP_REFERER=http://localhost/webKurs/index.php/admin/create
+---
+2014/10/23 16:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in Z:\home\localhost\www\webKurs\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\CController.php(270): CController->missingAction('admin')
+#1 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/admin')
+#3 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webKurs/index.php/admin/admin
+---
+2014/10/23 16:27:12 [warning] [application] Failed to set unsafe attribute "confirmPassword" of "User".
+in Z:\home\localhost\www\webKurs\protected\controllers\AdminController.php (116)
+in Z:\home\localhost\www\webKurs\index.php (13)
+2014/10/23 16:27:12 [error] [exception.CException] exception 'CException' with message 'Unknown authorization item "supervisor".' in Z:\home\localhost\www\webKurs\framework\web\auth\CPhpAuthManager.php:179
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\protected\controllers\AdminController.php(191): CPhpAuthManager->assign('supervisor', '19')
+#1 Z:\home\localhost\www\webKurs\protected\controllers\AdminController.php(118): AdminController->assignRole('supervisor', '19')
+#2 Z:\home\localhost\www\webKurs\framework\web\actions\CInlineAction.php(49): AdminController->actionCreate()
+#3 Z:\home\localhost\www\webKurs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#10 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('create')
+#12 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/create')
+#13 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/webKurs/index.php/admin/create
+HTTP_REFERER=http://localhost/webKurs/index.php/admin/create
+---
+2014/10/23 16:30:01 [warning] [application] Failed to set unsafe attribute "confirmPassword" of "User".
+in Z:\home\localhost\www\webKurs\protected\controllers\AdminController.php (121)
+in Z:\home\localhost\www\webKurs\index.php (13)
+2014/10/23 16:30:01 [error] [exception.CException] exception 'CException' with message 'Unknown authorization item "supervisor".' in Z:\home\localhost\www\webKurs\framework\web\auth\CPhpAuthManager.php:179
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\protected\controllers\AdminController.php(196): CPhpAuthManager->assign('supervisor', '20')
+#1 Z:\home\localhost\www\webKurs\protected\controllers\AdminController.php(123): AdminController->assignRole('supervisor', '20')
+#2 Z:\home\localhost\www\webKurs\framework\web\actions\CInlineAction.php(49): AdminController->actionCreate()
+#3 Z:\home\localhost\www\webKurs\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#10 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('create')
+#12 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/create')
+#13 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/webKurs/index.php/admin/create
+HTTP_REFERER=http://localhost/webKurs/index.php/admin/create
+---

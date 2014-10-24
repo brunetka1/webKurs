@@ -16,6 +16,16 @@
  */
 class User extends CActiveRecord
 {
+	public $currentPageSize = 10;
+    public $searchCriteria = array();
+    public $confirmPassword;
+    public $status;
+
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -111,8 +121,5 @@ class User extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return User the static model class
 	 */
-	public static function model($className=__CLASS__)
-	{
-		return parent::model($className);
-	}
+	
 }
