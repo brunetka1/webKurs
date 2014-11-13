@@ -3021,3 +3021,283 @@ Stack trace:
 REQUEST_URI=/webKurs/index.php/admin/create
 HTTP_REFERER=http://localhost/webKurs/index.php/admin/create
 ---
+2014/11/06 19:23:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in Z:\home\localhost\www\webKurs\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\CController.php(270): CController->missingAction('css')
+#1 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('css')
+#2 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('ibeacon/css/pag...')
+#3 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webKurs/index.php/ibeacon/css/pager.css
+HTTP_REFERER=http://localhost/webKurs/index.php/ibeacon/admin
+---
+2014/11/06 19:23:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gridview".' in Z:\home\localhost\www\webKurs\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\CController.php(270): CController->missingAction('gridview')
+#1 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('gridview')
+#2 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('ibeacon/gridvie...')
+#3 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webKurs/index.php/ibeacon/gridview/jquery.yiigridview.js
+HTTP_REFERER=http://localhost/webKurs/index.php/ibeacon/admin
+---
+2014/11/06 19:30:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in Z:\home\localhost\www\webKurs\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\CController.php(270): CController->missingAction('css')
+#1 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('css')
+#2 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('ibeacon/css/pag...')
+#3 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webKurs/index.php/ibeacon/css/pager.css
+HTTP_REFERER=http://localhost/webKurs/index.php/ibeacon/admin
+---
+2014/11/06 19:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gridview".' in Z:\home\localhost\www\webKurs\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\CController.php(270): CController->missingAction('gridview')
+#1 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('gridview')
+#2 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('ibeacon/gridvie...')
+#3 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webKurs/index.php/ibeacon/gridview/jquery.yiigridview.js
+HTTP_REFERER=http://localhost/webKurs/index.php/ibeacon/admin
+---
+2014/11/06 19:41:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/06 19:46:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/06 19:55:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/06 19:55:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/06 19:56:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/06 20:02:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db.auth_assignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `auth_assignment`
+WHERE userid=:userid. Bound with :userid='admin'.
+in Z:\home\localhost\www\webKurs\index.php (13)
+2014/11/06 20:02:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db.auth_assignment' doesn't exist. The SQL statement executed was: SELECT *
+FROM `auth_assignment`
+WHERE userid=:userid. Bound with :userid='admin'' in Z:\home\localhost\www\webKurs\framework\db\CDbCommand.php:543
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\localhost\www\webKurs\framework\web\auth\CDbAuthManager.php(337): CDbCommand->queryAll()
+#2 Z:\home\localhost\www\webKurs\framework\web\auth\CDbAuthManager.php(74): CDbAuthManager->getAuthAssignments('admin')
+#3 Z:\home\localhost\www\webKurs\framework\web\auth\CWebUser.php(817): CDbAuthManager->checkAccess('customer', 'admin', Array)
+#4 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(346): CWebUser->checkAccess('customer')
+#5 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(284): CAccessRule->isRoleMatched(Object(CWebUser))
+#6 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(138): CAccessRule->isUserAllowed(Object(CWebUser), Object(CustomerController), Object(CInlineAction), '127.0.0.1', 'GET')
+#7 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#8 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#12 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#14 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#15 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/06 20:05:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/06 20:12:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/06 23:53:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/07 00:02:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/07 00:02:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/07 00:03:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/07 00:03:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---
+2014/11/07 00:05:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\webKurs\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\webKurs\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\webKurs\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\webKurs\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\webKurs\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\webKurs\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\webKurs\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\localhost\www\webKurs\framework\web\CWebApplication.php(141): CWebApplication->runController('customer')
+#9 Z:\home\localhost\www\webKurs\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\webKurs\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webKurs/index.php/customer
+---

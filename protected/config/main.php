@@ -9,10 +9,14 @@ return array(
 	//'theme'=>'bootstrap',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Shop mamagment',
+	//'defaultController' => 'site/login',//////////
 	
 
 	// preloading 'log' component
 	'preload'=>array('log'),
+	'aliases' => array(
+        'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'),
+    ),////////////
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -45,6 +49,7 @@ return array(
             'class'=>'bootstrap.components.Bootstrap',
         ),
 		'user'=>array(
+			'class' => 'OmsWebUser',
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 			//'returnUrl'=>array('ibeacon/admin'),
@@ -58,13 +63,18 @@ return array(
 
 		'urlManager'=>array(
 			'urlFormat'=>'path',
-			//'showScriptName' => false,
-			'rules'=>array(
+			'showScriptName' => false,
+			 'rules'=>array(
+                'admin/<action:(create|edit|duplicate|remove|user|index)>/*'=>'admin/<action>',
+                'admin/*'=>'admin/index',
+                '<controller:\w+>/<action:\w+>/*'=>'<controller>/<action>',
+            ),
+			//'rules'=>array(
 				
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			),
+			//	'<controller:\w+>/<id:\d+>'=>'<controller>/view',
+			//	'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+			//	'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+			//),
 		),
 		/*
 		'db'=>array(
@@ -92,27 +102,53 @@ return array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
 		),
-		'log'=>array(
-			'class'=>'CLogRouter',
-			'routes'=>array(
-				array(
-					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
-				),
-				// uncomment the following to show log messages on web pages
-				/*
-				array(
-					'class'=>'CWebLogRoute',
-				),
-				*/
-			),
-		),
-	),
-	
-	// application-level parameters that can be accessed
-	// using Yii::app()->params['paramName']
-	'params'=>array(
-		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
-	),
+		'log' => array(
+            'class'   => 'CLogRouter',
+            'enabled' => YII_DEBUG,
+            'routes'  => array(
+                array(
+                    // направляем результаты профайлинга в ProfileLogRoute (отображается
+                    // внизу страницы)
+                    'class'   => 'CProfileLogRoute',
+                    'levels'  => 'profile',
+                    'enabled' => false,
+                ),
+
+                array(
+                    'class'  => 'CFileLogRoute',
+                    'levels' => 'error, warning',
+                ),
+                // uncomment the following to show log messages on web pages
+                /*
+                array(
+                    'class'=>'CWebLogRoute',
+                ),
+                */
+
+                array(
+                    'class'         => 'CWebLogRoute',
+                    'categories'    => 'application',
+                    'showInFireBug' => true
+                ),
+            ),
+        ),
+        'authManager' => array(
+            'class'           => 'CDbAuthManager',
+            'connectionID'    => 'db',
+            'assignmentTable' => 'auth_assignment',
+            'itemTable'       => 'auth_item',
+            'itemChildTable'  => 'auth_item_child',
+        ),
+    ),
+
+    // application-level parameters that can be accessed
+    // using Yii::app()->params['paramName']
+    'params' => array(
+        // this is used in contact page
+
+        'maxCredentialAttempts' => 5,
+        'blockSeconds' => 600,
+        'adminEmail' => 'webmaster@example.com',
+        'secondsBeforeDisactivate' => 6000,
+    ),
 );
