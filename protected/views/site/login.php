@@ -32,7 +32,7 @@
 
         <div class='panel panel-default'>
             <div class='panel-heading'>
-                <legend class='panel-title'>Shop menegment</legend>
+                <legend class='panel-title'>order management system</legend>
             </div>
             <div class='panel-body'>
                 <div class="row">
@@ -61,3 +61,5 @@
     </div>
     <?php $this->endWidget(); ?>
 </div>
+
+

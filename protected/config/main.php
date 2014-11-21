@@ -9,14 +9,14 @@ return array(
 	//'theme'=>'bootstrap',
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Shop mamagment',
-	//'defaultController' => 'site/login',//////////
+	'defaultController' => 'site/login',
 	
 
 	// preloading 'log' component
 	'preload'=>array('log'),
 	'aliases' => array(
         'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'),
-    ),////////////
+    ),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -64,6 +64,7 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'showScriptName' => false,
+			
 			 'rules'=>array(
                 'admin/<action:(create|edit|duplicate|remove|user|index)>/*'=>'admin/<action>',
                 'admin/*'=>'admin/index',
